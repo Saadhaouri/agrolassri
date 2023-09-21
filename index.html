@@ -93,22 +93,21 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <!-- <span class="navbar-toggler-icon"></span> -->
-            <span><i class="fa-solid fa-bars-staggered"></i></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#about">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blogs</a>
+                <a class="nav-link" href="#blogs">Blogs</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contacts</a>
@@ -119,7 +118,7 @@
           <!-- Normal Navbar -->
           <ul class="nav normal-nav d-none d-lg-flex fw-bold">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -145,63 +144,69 @@
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-              <img
-                src="https://as2.ftcdn.net/v2/jpg/05/18/79/89/1000_F_518798986_nPCqm5kcOFsdgI8Hiz6MkslhZPbZ5Pmm.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <div class="carousel-image" id="carousel-image1"></div>
+              <!-- <img
+                  src="https://as2.ftcdn.net/v2/jpg/05/18/79/89/1000_F_518798986_nPCqm5kcOFsdgI8Hiz6MkslhZPbZ5Pmm.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                /> -->
+
+              <div
+                class="carousel-caption d-flex flex-column justify-content-center h-100"
+              >
                 <h5>Agriculture Leader</h5>
-                <p class="my-3">
+                <p class="my-3 mx-lg-5">
                   Some representative placeholder content for the third slide.
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Officia, distinctio!
                 </p>
                 <a
                   href="#about"
-                  class="fw-bold text-light text-decoration-none mt-5"
+                  class="fw-bold text-light text-decoration-none mt-2"
                 >
                   More info &nbsp;
                   <i class="fa-solid fa-circle-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="5000">
-              <img
+            <div class="carousel-item" data-bs-interval="3000">
+              <div class="carousel-image" id="carousel-image2"></div>
+              <!-- <img
                 src="https://images.pexels.com/photos/1509607/pexels-photo-1509607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="d-block w-100"
                 alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
+              /> -->
+              <div
+                class="carousel-caption d-flex flex-column justify-content-center h-100"
+              >
                 <h5>Quality Standards</h5>
-                <p class="my-3">
+                <p class="my-3 mx-lg-5">
                   Some representative placeholder content for the third slide.
                   Lorem ipsum dolor sit amet.
                 </p>
                 <a
                   href="#about"
-                  class="fw-bold text-light text-decoration-none mt-5"
+                  class="fw-bold text-light text-decoration-none mt-2"
                 >
                   More info &nbsp;
                   <i class="fa-solid fa-circle-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="5000">
-              <img
+            <div class="carousel-item" data-bs-interval="3000">
+              <div class="carousel-image" id="carousel-image3"></div>
+              <!-- <img
                 src="https://images.pexels.com/photos/5529588/pexels-photo-5529588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="d-block w-100"
                 alt="..."
-              />
-              <!-- <img
-                src="https://images.pexels.com/photos/1483880/pexels-photo-1483880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="d-block w-100"
-                alt="..."
               /> -->
-              <div class="carousel-caption d-none d-md-block">
+
+              <div
+                class="carousel-caption d-flex flex-column justify-content-center h-100"
+              >
                 <h5>Organic Services</h5>
-                <p class="my-3">
+                <p class="my-3 mx-lg-5">
                   Some representative placeholder content for the third slide.
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Aspernatur nostrum, quae hic assumenda odio corporis ipsam
@@ -209,7 +214,7 @@
                 </p>
                 <a
                   href="#about"
-                  class="fw-bold text-light text-decoration-none mt-5"
+                  class="fw-bold text-light text-decoration-none mt-2"
                 >
                   More info &nbsp;
                   <i class="fa-solid fa-circle-chevron-right"></i>
@@ -269,9 +274,7 @@
                 sure there isn't anything embarrassing hidden in the middle of
                 text.
               </p>
-              <button class="btn mx-auto yg-btn">
-                Learn More
-              </button>
+              <a href="#about" class="btn mx-auto yg-btn">Learn More</a>
             </div>
           </div>
 
@@ -326,9 +329,7 @@
                 injected humour, or randomised words which don't look even
                 slightly believable.
               </p>
-              <button class="btn mx-auto yg-btn">
-                Learn More
-              </button>
+              <a href="#about" class="btn mx-auto yg-btn mb-4">Learn More</a>
             </div>
           </div>
         </section>
@@ -515,7 +516,7 @@
             class="blogs-container d-flex flex-wrap justify-content-center my-4"
           >
             <a
-              href="#"
+              href="#blogs"
               class="blog-items m-3 position-relative"
               id="blog-item1"
             >
@@ -531,9 +532,9 @@
                 <div class="blog-user-name text-light fw-bold mb-1">
                   Olivia Rhye &#8226; 20 Sep 2023
                 </div>
-                <div class="blog-title text-light fs-5 fw-bold">
+                <div class="blog-title text-light fw-bold">
                   Agriculture miracle you don't know
-                  <i class="bi bi-arrow-up-right fs-6 ms-1"></i>
+                  <i class="bi bi-arrow-up-right ms-1"></i>
                 </div>
                 <p>
                   There are lorem ipsum is simply free many variations of ipsum
@@ -552,7 +553,7 @@
             </a>
 
             <a
-              href="#"
+              href="#blogs"
               class="blog-items m-3 position-relative"
               id="blog-item2"
             >
@@ -567,9 +568,9 @@
                 <div class="blog-user-name text-light fw-bold mb-1">
                   Paul Ahua &#8226; 30 May 2023
                 </div>
-                <div class="blog-title text-light fs-5 fw-bold">
+                <div class="blog-title text-light fw-bold">
                   By drone can do better than you
-                  <i class="bi bi-arrow-up-right fs-6 ms-1"></i>
+                  <i class="bi bi-arrow-up-right ms-1"></i>
                 </div>
                 <p>
                   There are lorem ipsum is simply free many variations of ipsum
@@ -588,7 +589,7 @@
             </a>
 
             <a
-              href="#"
+              href="#blogs"
               class="blog-items m-3 position-relative"
               id="blog-item3"
             >
@@ -605,9 +606,9 @@
                 <div class="blog-user-name text-light fw-bold mb-1">
                   Met John &#8226; 09 Jul 2023
                 </div>
-                <div class="blog-title blog-title text-light fs-5 fw-bold">
+                <div class="blog-title text-light fw-bold">
                   Agriculture Miracle you
-                  <i class="bi bi-arrow-up-right fs-6 ms-1"></i>
+                  <i class="bi bi-arrow-up-right ms-1"></i>
                 </div>
                 <p>
                   There are lorem ipsum is simply free many variations of ipsum
@@ -626,7 +627,7 @@
             </a>
 
             <a
-              href="#"
+              href="#blogs"
               class="blog-items m-3 position-relative"
               id="blog-item4"
             >
@@ -642,9 +643,9 @@
                 <div class="blog-user-name text-light fw-bold mb-1">
                   Olivia Rhye &#8226; 20 Sep 2023
                 </div>
-                <div class="blog-title text-light fs-5 fw-bold">
+                <div class="blog-title text-light fw-bold">
                   Agriculture miracle you don't know
-                  <i class="bi bi-arrow-up-right fs-6 ms-1"></i>
+                  <i class="bi bi-arrow-up-right ms-1"></i>
                 </div>
                 <p>
                   There are lorem ipsum is simply free many variations of ipsum
@@ -663,7 +664,7 @@
             </a>
 
             <a
-              href="#"
+              href="#blogs"
               class="blog-items m-3 position-relative"
               id="blog-item5"
             >
@@ -678,9 +679,9 @@
                 <div class="blog-user-name text-light fw-bold mb-1">
                   Paul Ahua &#8226; 30 May 2023
                 </div>
-                <div class="blog-title text-light fs-5 fw-bold">
+                <div class="blog-title text-light fw-bold">
                   Doubtful on striking required point
-                  <i class="bi bi-arrow-up-right fs-6 ms-1"></i>
+                  <i class="bi bi-arrow-up-right ms-1"></i>
                 </div>
                 <p>
                   There are lorem ipsum is simply free many variations of ipsum
@@ -699,7 +700,7 @@
             </a>
 
             <a
-              href="#"
+              href="#blogs"
               class="blog-items m-3 position-relative"
               id="blog-item6"
             >
@@ -716,9 +717,9 @@
                 <div class="blog-user-name text-light fw-bold mb-1">
                   Met John &#8226; 09 Jul 2023
                 </div>
-                <div class="blog-title blog-title text-light fs-5 fw-bold">
+                <div class="blog-title blog-title text-light fw-bold">
                   Agriculture Miracle you
-                  <i class="bi bi-arrow-up-right fs-6 ms-1"></i>
+                  <i class="bi bi-arrow-up-right ms-1"></i>
                 </div>
                 <p>
                   There are lorem ipsum is simply free many variations of ipsum
@@ -737,9 +738,7 @@
             </a>
           </div>
 
-          <a href="#services" class="btn mx-auto yg-btn mb-5"
-            >View More</a
-          >
+          <a href="#blogs" class="btn mx-auto yg-btn mb-5">View More</a>
         </section>
 
         <!-- Contact section -->
@@ -753,14 +752,14 @@
             >
               <div class="image pe-2">
                 <img
-                  class="w-100 rounded-start-4"
+                  class="w-100"
                   src="https://images.pexels.com/photos/5231239/pexels-photo-5231239.jpeg"
                   alt=""
                 />
               </div>
 
               <div class="accordion-container w-50 ps-2">
-                <p class="head-para ps-md-4">
+                <p class="head-para pt-3 ps-md-4">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Exercitationem eius soluta facere eos veritatis nihil qui ipsa
                   rem! Magni, sint eum. Excepturi natus ut, facere ipsam
@@ -1037,7 +1036,11 @@
                   class="form-control"
                 />
                 <div class="input-group-append">
-                  <button id="button-addon5" type="submit" class="yg-btn rounded-end">
+                  <button
+                    id="button-addon5"
+                    type="submit"
+                    class="yg-btn rounded-end"
+                  >
                     Subscribe
                   </button>
                 </div>
