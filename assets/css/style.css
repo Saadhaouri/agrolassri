@@ -15,8 +15,6 @@ body {
   --spl-lightOrange: #f9f4e8;
   --spl-yellow: #ffc107;
   --headline-font: "Amatic SC", cursive;
-  --bg-gradient: linear-gradient(to top, #dfe9f3 0%, white 100%);
-  --bg-gradient2: linear-gradient(to top, white 0%, #dfe9f3 100%);
 }
 
 /* utility for buttons */
@@ -80,7 +78,6 @@ body {
 
 /* Navbar */
 nav {
-  /* background-image: var(--bg-gradient); */
   background-color: #fff;
 }
 .brand-name {
@@ -115,30 +112,33 @@ nav {
   height: 3px;
   transition: all 0.4s ease-out;
 }
-.normal-nav .nav-link:hover:after {
-  width: 100%;
+.normal-nav .nav-link:hover {
+  color: #000;
 }
 
+.normal-nav .nav-link.active {
+  color: #000;
+}
 .normal-nav .nav-link.active:after {
   width: 100%;
 }
 
-/* Header Carousel */
-.main-header .carousel-item {
+/* Home Carousel */
+#home .carousel-item {
   height: 85vh;
 }
 
-.main-header #carousel-image1 {
+#home #carousel-image1 {
   background-image: url("https://as2.ftcdn.net/v2/jpg/05/18/79/89/1000_F_518798986_nPCqm5kcOFsdgI8Hiz6MkslhZPbZ5Pmm.jpg");
 }
-.main-header #carousel-image2 {
+#home #carousel-image2 {
   background-image: url("https://images.pexels.com/photos/1509607/pexels-photo-1509607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
-.main-header #carousel-image3 {
+#home #carousel-image3 {
   background-image: url("https://images.pexels.com/photos/5529588/pexels-photo-5529588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 
-.main-header .carousel-image {
+#home .carousel-image {
   height: 100%;
   background-repeat: no-repeat;
   background-position: cover;
@@ -146,16 +146,16 @@ nav {
   animation: zoom 50s linear infinite;
 }
 
-/* .main-header .carousel-item img {
+/* #home .carousel-item img {
   pointer-events: none;
   object-fit: cover;
   animation: zoom 50s linear infinite;
 } */
 
-.main-header .carousel-caption a i {
+#home .carousel-caption a i {
   transition: transform 0.3s ease;
 }
-.main-header .carousel-caption a:hover i {
+#home .carousel-caption a:hover i {
   transform: translateX(1rem);
 }
 
@@ -171,26 +171,26 @@ nav {
   }
 }
 
-.main-header .carousel-caption {
+#home .carousel-caption {
   text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
 }
-.main-header .carousel-caption h5 {
+#home .carousel-caption h5 {
   font-size: 45px;
   font-family: "Carter One", cursive;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.main-header .carousel-caption p {
+#home .carousel-caption p {
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   font-size: 18px;
 }
 
-.main-header .carousel-caption a {
+#home .carousel-caption a {
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-main section:nth-child(2n-1) {
+main section:nth-child(2n) {
   background-color: var(--spl-lightOrange);
 }
 
@@ -520,6 +520,26 @@ textarea {
   color: white;
 }
 
+/* Back to Top icon */
+.back-to-top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 2rem;
+  z-index: 2;
+  transition: all 0.5s ease;
+  opacity: 0;
+  transform: translateY(6rem);
+}
+.back-to-top.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.back-to-top i {
+  font-size: 1.2rem;
+  border-radius: 50%;
+}
+
 /* Footer section */
 footer {
   background-image: url("../images/farm-field-sketch.png"),
@@ -565,10 +585,10 @@ footer .sec-sub button {
 
 @media screen and (max-width: 576px) {
   /* Header Carousel section */
-  .main-header .carousel-image {
+  #home .carousel-image {
     background-position: center;
   }
-  .main-header .carousel-caption h5 {
+  #home .carousel-caption h5 {
     font-size: 35px;
   }
 
