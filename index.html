@@ -67,165 +67,167 @@
       </div>
 
       <!-- Navigation section -->
-      <nav class="navbar px-md-4 sticky-top">
-        <div class="container-fluid d-flex justify-content-between">
-          <!-- Navbar Brand Logo -->
-          <a class="navbar-brand" href="#">
-            <img
-              src="./assets/images/brand-logo.png"
-              alt="Logo"
-              width="40"
-              height="40"
-              class="d-inline-block align-text-top"
-            />
-            <span class="brand-name ms-3 d-none d-md-inline"
-              >AGRO<span>GREEN</span></span
-            >
-          </a>
+      <header class="sticky-top">
+        <nav class="navbar px-md-4">
+          <div class="container-fluid d-flex justify-content-between">
+            <!-- Navbar Brand Logo -->
+            <a class="navbar-brand" href="#">
+              <img
+                src="./assets/images/brand-logo.png"
+                alt="Logo"
+                width="40"
+                height="40"
+                class="d-inline-block align-text-top"
+              />
+              <span class="brand-name ms-3 d-none d-md-inline"
+                >AGRO<span>GREEN</span></span
+              >
+            </a>
 
-          <!-- Responsive Navbar -->
-          <button
-            class="navbar-toggler d-lg-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+            <!-- Responsive Navbar -->
+            <button
+              class="navbar-toggler d-lg-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#blogs">Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contacts</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Normal Navbar -->
+            <ul class="nav normal-nav d-none d-lg-flex fw-bold">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About Us</a>
+                <a class="nav-link nav-head" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link nav-head" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#blogs">Blogs</a>
+                <a class="nav-link nav-head" href="#blogs">Blogs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contacts</a>
+                <a class="nav-link nav-head" href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
+        </nav>
+      </header>
 
-          <!-- Normal Navbar -->
-          <ul class="nav normal-nav d-none d-lg-flex fw-bold">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blogs">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <header class="main-header">
-        <!-- Carousel Section -->
-        <div
-          id="carouselExampleSlidesOnly"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <div class="carousel-image" id="carousel-image1"></div>
-              <!-- <img
+      <main class="d-flex flex-column justify-content-center">
+        <section id="home" class="main-header">
+          <!-- Carousel Section -->
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <div class="carousel-image" id="carousel-image1"></div>
+                <!-- <img
                   src="https://as2.ftcdn.net/v2/jpg/05/18/79/89/1000_F_518798986_nPCqm5kcOFsdgI8Hiz6MkslhZPbZ5Pmm.jpg"
                   class="d-block w-100"
                   alt="..."
                 /> -->
 
-              <div
-                class="carousel-caption d-flex flex-column justify-content-center h-100"
-              >
-                <h5>Agriculture Leader</h5>
-                <p class="my-3 mx-lg-5">
-                  Some representative placeholder content for the third slide.
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Officia, distinctio!
-                </p>
-                <a
-                  href="#about"
-                  class="fw-bold text-light text-decoration-none mt-2"
+                <div
+                  class="carousel-caption d-flex flex-column justify-content-center h-100"
                 >
-                  More info &nbsp;
-                  <i class="fa-solid fa-circle-chevron-right"></i>
-                </a>
+                  <h5>Agriculture Leader</h5>
+                  <p class="my-3 mx-lg-5">
+                    Some representative placeholder content for the third slide.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia, distinctio!
+                  </p>
+                  <a
+                    href="#about"
+                    class="fw-bold text-light text-decoration-none mt-2"
+                  >
+                    More info &nbsp;
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <div class="carousel-image" id="carousel-image2"></div>
-              <!-- <img
+              <div class="carousel-item" data-bs-interval="3000">
+                <div class="carousel-image" id="carousel-image2"></div>
+                <!-- <img
                 src="https://images.pexels.com/photos/1509607/pexels-photo-1509607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="d-block w-100"
                 alt="..."
               /> -->
-              <div
-                class="carousel-caption d-flex flex-column justify-content-center h-100"
-              >
-                <h5>Quality Standards</h5>
-                <p class="my-3 mx-lg-5">
-                  Some representative placeholder content for the third slide.
-                  Lorem ipsum dolor sit amet.
-                </p>
-                <a
-                  href="#about"
-                  class="fw-bold text-light text-decoration-none mt-2"
+                <div
+                  class="carousel-caption d-flex flex-column justify-content-center h-100"
                 >
-                  More info &nbsp;
-                  <i class="fa-solid fa-circle-chevron-right"></i>
-                </a>
+                  <h5>Quality Standards</h5>
+                  <p class="my-3 mx-lg-5">
+                    Some representative placeholder content for the third slide.
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                  <a
+                    href="#about"
+                    class="fw-bold text-light text-decoration-none mt-2"
+                  >
+                    More info &nbsp;
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <div class="carousel-image" id="carousel-image3"></div>
-              <!-- <img
+              <div class="carousel-item" data-bs-interval="3000">
+                <div class="carousel-image" id="carousel-image3"></div>
+                <!-- <img
                 src="https://images.pexels.com/photos/5529588/pexels-photo-5529588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="d-block w-100"
                 alt="..."
               /> -->
 
-              <div
-                class="carousel-caption d-flex flex-column justify-content-center h-100"
-              >
-                <h5>Organic Services</h5>
-                <p class="my-3 mx-lg-5">
-                  Some representative placeholder content for the third slide.
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Aspernatur nostrum, quae hic assumenda odio corporis ipsam
-                  aperiam beatae dolore culpa.
-                </p>
-                <a
-                  href="#about"
-                  class="fw-bold text-light text-decoration-none mt-2"
+                <div
+                  class="carousel-caption d-flex flex-column justify-content-center h-100"
                 >
-                  More info &nbsp;
-                  <i class="fa-solid fa-circle-chevron-right"></i>
-                </a>
+                  <h5>Organic Services</h5>
+                  <p class="my-3 mx-lg-5">
+                    Some representative placeholder content for the third slide.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Aspernatur nostrum, quae hic assumenda odio corporis ipsam
+                    aperiam beatae dolore culpa.
+                  </p>
+                  <a
+                    href="#about"
+                    class="fw-bold text-light text-decoration-none mt-2"
+                  >
+                    More info &nbsp;
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </header>
+        </section>
 
-      <main class="d-flex flex-column justify-content-center">
         <!-- About section -->
         <section id="about">
           <header class="section-header">About Agrogreen</header>
@@ -952,8 +954,12 @@
         </section>
       </main>
 
-      <!-- Footer Section -->
+      <!-- Back-to-top icon -->
+      <a href="#" class="back-to-top">
+        <i class="fa-solid fa-chevron-up p-3 yg-btn"></i>
+      </a>
 
+      <!-- Footer Section -->
       <footer class="py-5 px-2 px-md-5">
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-3">
@@ -989,16 +995,16 @@
                     <a href="#" class="nav-link p-0">Home</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0">About</a>
+                    <a href="#about" class="nav-link p-0">About</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0">Services</a>
+                    <a href="#services" class="nav-link p-0">Services</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0">Blogs</a>
+                    <a href="#blogs" class="nav-link p-0">Blogs</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0">Contact us</a>
+                    <a href="#contact" class="nav-link p-0">Contact us</a>
                   </li>
                 </ul>
               </div>
