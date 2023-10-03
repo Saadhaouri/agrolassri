@@ -220,7 +220,7 @@ main section:nth-child(2n) {
 }
 
 #about .image-l {
-  width: 650px;
+  max-width: 650px;
   transition: all 1s ease;
 }
 #about .image-l:hover {
@@ -228,7 +228,7 @@ main section:nth-child(2n) {
 }
 
 #about .image-r {
-  width: 650px;
+  max-width: 650px;
   transition: all 1s ease;
 }
 #about .image-r:hover {
@@ -236,7 +236,7 @@ main section:nth-child(2n) {
 }
 
 .headline {
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: var(--headline-font);
   font-weight: 700;
   color: var(--spl-grey);
