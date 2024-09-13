@@ -9,6 +9,29 @@ body {
   overflow-x: hidden;
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand-name {
+  font-size: 2rem; /* Larger size for LASSRI */
+  font-weight: bold;
+  color: #333; /* Choose your preferred color */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the text */
+}
+
+.brand-subtitle {
+  font-size: 0.8rem; /* Smaller size for IMPORT / EXPORT */
+  font-weight: normal;
+  color: #666; /* Lighter color for contrast */
+  margin-top: -8px; /* Move it closer to LASSRI */
+  letter-spacing: 1px; /* Add a little spacing */
+}
+
 :root {
   --spl-green: #165f44;
   --spl-grey: #6a726f;
@@ -123,19 +146,29 @@ nav {
   width: 100%;
 }
 
+.language-option {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.language-option:hover {
+  background-color: #f0f0f0;
+}
+
 /* Home Carousel */
 #home .carousel-item {
   height: 85vh;
 }
 
 #home #carousel-image1 {
-  background-image: url("https://as2.ftcdn.net/v2/jpg/05/18/79/89/1000_F_518798986_nPCqm5kcOFsdgI8Hiz6MkslhZPbZ5Pmm.jpg");
+  background-image: url("https://images.pexels.com/photos/1483880/pexels-photo-1483880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 #home #carousel-image2 {
   background-image: url("https://images.pexels.com/photos/1509607/pexels-photo-1509607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 #home #carousel-image3 {
-  background-image: url("https://images.pexels.com/photos/5529588/pexels-photo-5529588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("https://images.pexels.com/photos/1367243/pexels-photo-1367243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 
 #home .carousel-image {
@@ -151,6 +184,36 @@ nav {
   object-fit: cover;
   animation: zoom 50s linear infinite;
 } */
+
+#lang-select {
+  appearance: none; /* Remove default styling (for browsers like Safari) */
+  padding: 10px;
+  width: 150px;
+  font-size: 16px;
+  border: 2px solid #4caf50; /* Add a border */
+  border-radius: 5px; /* Make it rounded */
+  background-color: #f9f9f9; /* Light background */
+  color: #333; /* Text color */
+  cursor: pointer;
+  outline: none;
+}
+
+/* Add a custom arrow using background image */
+#lang-select {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>')
+    no-repeat right 10px center;
+  background-size: 16px;
+}
+
+/* Hover effect */
+#lang-select:hover {
+  border-color: #45a049;
+}
+
+/* Style the option elements (Optional: some browsers may ignore this) */
+#lang-select option {
+  padding: 10px;
+}
 
 #home .carousel-caption a i {
   transition: transform 0.3s ease;
@@ -264,7 +327,7 @@ main section:nth-child(2n) {
 }
 
 /* Services section */
-#services .card {
+/* #services .card {
   width: 26rem;
   margin-top: 3rem;
   background-color: var(--spl-lightOrange);
@@ -291,6 +354,66 @@ main section:nth-child(2n) {
 
 #services .card .card-text {
   text-align: justify;
+} */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.card {
+  width: 18rem; /* Width of each card */
+  background-color: #fff;
+  border: 1px solid #ddd; /* Border around cards */
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Adjust image height */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card-title a {
+  text-decoration: none;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+.card-title a:hover {
+  color: #27ae60; /* Change link color on hover */
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 1.5rem;
+  }
 }
 
 #services .fixed-bg {
@@ -348,17 +471,36 @@ main section:nth-child(2n) {
   animation-play-state: paused;
 }
 
-/* Blogs section */
+/* Modernized Blogs section with full cover image */
 .blog-items {
-  width: 27rem;
-}
-
-.blog-image {
+  width: 25rem;
+  background-color: #ffffff;
+  border-radius: 1px;
   overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
 }
 
+.blog-items:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.blog-image {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute; /* Cover the entire card */
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
 .blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire card */
   transition: all 0.4s ease;
 }
 
@@ -369,55 +511,100 @@ main section:nth-child(2n) {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #00000036;
-  transition: all 0.4s ease;
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.4s ease;
 }
 
 .blog-items:hover .blog-image img {
-  filter: blur(3px);
+  transform: scale(1.1);
+  filter: brightness(80%);
 }
+
 .blog-items:hover .blog-image:after {
-  background: #00000069;
-}
-
-.blog-user-name {
-  font-size: 1rem;
-}
-
-.blog-title {
-  font-size: 1.3rem;
-}
-
-.blog-title i {
-  font-size: 0.9rem;
-}
-
-.blog-texts p {
-  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .blog-texts {
+  position: relative;
+  padding: 1.5rem;
+  z-index: 1; /* Ensure the text appears on top of the image */
+  color: #ffffff;
+}
+.blog-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff;
+  transition: color 0.3s ease;
+  text-decoration: none; /* Removes the underline */
+}
+
+/* If the underline is caused by an anchor tag (<a>) */
+.blog-title a {
+  text-decoration: none; /* Ensures links inside the title are also without underline */
+  color: inherit; /* Maintain the color of the title */
+}
+
+.blog-texts a {
+  text-decoration: none; /* Removes underline from any other links in blog text */
+  color: inherit; /* Keeps the color consistent with surrounding text */
+}
+
+.extra-social {
   position: absolute;
-  top: 58%;
-  left: 2%;
+  bottom: 10px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
 }
 
-.blogs-container .extra-social {
-  position: absolute;
-  bottom: 1%;
-  right: 0;
-  color: #cecece;
-  font-size: 14px;
+.extra-social .like,
+.extra-social .comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  color: #ffffff;
+  transition: background 0.3s ease;
 }
 
-.blogs-container .extra-social .like,
-.comment {
-  background-color: #cecece3c;
-  border-radius: 10px;
+.extra-social .like i,
+.extra-social .comment i {
+  color: #ff7a18;
 }
 
-.blog-texts p {
-  color: #cecece;
+.extra-social .like:hover,
+.extra-social .comment:hover {
+  background-color: #ff7a18;
+  color: #ffffff;
+}
+
+.extra-social .like:hover i,
+.extra-social .comment:hover i {
+  color: #ffffff;
+}
+
+.blog-items:hover .blog-title i {
+  transform: translateX(5px);
+}
+
+/* Blog Button */
+.yg-btn {
+  background-color: #ff7a18;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 10px 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+}
+
+.yg-btn:hover {
+  background-color: #ff5000;
+  transform: translateY(-3px);
 }
 
 /* Contact section */
@@ -461,6 +648,7 @@ main section:nth-child(2n) {
 }
 
 /* Get in Touch section */
+/* Background image with overlay */
 .get-in-touch {
   background-image: url(https://images.pexels.com/photos/5529604/pexels-photo-5529604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1),
     linear-gradient(to bottom, #00000036 0%, #00000036 100%);
@@ -470,54 +658,49 @@ main section:nth-child(2n) {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  padding: 50px 20px; /* Added padding to ensure content doesn't touch edges */
 }
-
-.contact-details p {
-  color: #ffffffd2;
-  line-height: 10px;
-}
-
-.contact-details i {
-  color: #fff;
-  font-size: 2rem;
-  background-color: #ffffff49;
-  padding: 20px;
-  border-radius: 50%;
-}
-
-.get-in-touch form input,
-textarea {
-  border: 0;
-  outline: none;
-  padding: 20px;
-}
-
-.get-in-touch button {
-  border: 0;
-  padding: 20px;
-  overflow: hidden;
-  transition: all 0.5s ease;
-  z-index: 1;
-}
-
-.get-in-touch button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--spl-green);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: all 0.5s ease;
-  z-index: -1;
-}
-.get-in-touch button:hover:before {
-  transform: scaleX(1);
-}
-.get-in-touch button:hover {
+.get-in-touch h3 {
+  text-align: center;
   color: white;
+  margin-bottom: 10px;
+}
+
+/* Contact details text styling */
+.contact-item {
+  color: #fff;
+  text-align: center;
+}
+
+.contact-item i {
+  font-size: 36px;
+  border: solid 2px white;
+  border-radius: 50%;
+  padding: 20px;
+}
+.contact-item p {
+  font-size: 16px;
+  border: solid 2px white;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+/* Button styling */
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .contact-details i {
+    font-size: 1.5rem; /* Adjust icon size for smaller screens */
+  }
+
+  .get-in-touch form input,
+  textarea {
+    padding: 15px; /* Smaller padding for mobile */
+  }
+
+  .get-in-touch button {
+    padding: 12px 25px;
+  }
 }
 
 /* Back to Top icon */

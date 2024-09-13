@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AGROGREEN - An Agricultural Products & Services Providing Company</title>
+    <title>
+      LASSRI - An Agricultural Products & Services Providing Company
+    </title>
     <!-- link favicon -->
     <link
       rel="shortcut icon"
@@ -72,16 +74,10 @@
           <div class="container-fluid d-flex justify-content-between">
             <!-- Navbar Brand Logo -->
             <a class="navbar-brand" href="#">
-              <img
-                src="./assets/images/brand-logo.png"
-                alt="Logo"
-                width="40"
-                height="40"
-                class="d-inline-block align-text-top"
-              />
-              <span class="brand-name ms-3 d-none d-md-inline"
-                >AGRO<span>GREEN</span></span
-              >
+              <span class="brand-name">
+                LASSRI
+                <span class="brand-subtitle">IMPORT / EXPORT sarl</span>
+              </span>
             </a>
 
             <!-- Responsive Navbar -->
@@ -133,14 +129,20 @@
               <li class="nav-item">
                 <a class="nav-link nav-head" href="#contact">Contact Us</a>
               </li>
+              <div class="dropdown-container">
+                <select id="languageSelect" style="cursor: pointer">
+                  <option value="en">English</option>
+                  <option value="de">Deutsch</option>
+                </select>
+              </div>
             </ul>
           </div>
         </nav>
       </header>
 
       <main class="d-flex flex-column justify-content-center">
+        <!-- Carousel Section -->
         <section id="home" class="main-header">
-          <!-- Carousel Section -->
           <div
             id="carouselExampleSlidesOnly"
             class="carousel slide"
@@ -149,20 +151,15 @@
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="3000">
                 <div class="carousel-image" id="carousel-image1"></div>
-                <!-- <img
-                  src="https://as2.ftcdn.net/v2/jpg/05/18/79/89/1000_F_518798986_nPCqm5kcOFsdgI8Hiz6MkslhZPbZ5Pmm.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                /> -->
-
                 <div
                   class="carousel-caption d-flex flex-column justify-content-center h-100"
                 >
-                  <h5>Agriculture Leader</h5>
+                  <h5>Leading the Way in Global Agriculture Exports</h5>
                   <p class="my-3 mx-lg-5">
-                    Some representative placeholder content for the third slide.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Officia, distinctio!
+                    Providing top-quality vegetables and fruits to markets
+                    worldwide. With a commitment to excellence and
+                    sustainability, we ensure fresh produce reaches every corner
+                    of the globe.
                   </p>
                   <a
                     href="#about"
@@ -175,18 +172,14 @@
               </div>
               <div class="carousel-item" data-bs-interval="3000">
                 <div class="carousel-image" id="carousel-image2"></div>
-                <!-- <img
-                src="https://images.pexels.com/photos/1509607/pexels-photo-1509607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="d-block w-100"
-                alt="..."
-              /> -->
                 <div
                   class="carousel-caption d-flex flex-column justify-content-center h-100"
                 >
-                  <h5>Quality Standards</h5>
+                  <h5>Unmatched Quality Standards</h5>
                   <p class="my-3 mx-lg-5">
-                    Some representative placeholder content for the third slide.
-                    Lorem ipsum dolor sit amet.
+                    Our commitment to delivering the finest vegetables and
+                    fruits is backed by rigorous quality control measures,
+                    ensuring fresh and safe produce for global markets.
                   </p>
                   <a
                     href="#about"
@@ -199,21 +192,14 @@
               </div>
               <div class="carousel-item" data-bs-interval="3000">
                 <div class="carousel-image" id="carousel-image3"></div>
-                <!-- <img
-                src="https://images.pexels.com/photos/5529588/pexels-photo-5529588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="d-block w-100"
-                alt="..."
-              /> -->
-
                 <div
                   class="carousel-caption d-flex flex-column justify-content-center h-100"
                 >
-                  <h5>Organic Services</h5>
+                  <h5>Premium Organic Services</h5>
                   <p class="my-3 mx-lg-5">
-                    Some representative placeholder content for the third slide.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Aspernatur nostrum, quae hic assumenda odio corporis ipsam
-                    aperiam beatae dolore culpa.
+                    We specialize in offering certified organic vegetables and
+                    fruits, cultivated using sustainable farming practices to
+                    provide healthy, eco-friendly produce to global consumers.
                   </p>
                   <a
                     href="#about"
@@ -228,7 +214,7 @@
           </div>
         </section>
 
-        <!-- About section -->
+        <!-- About Section -->
         <section id="about">
           <header class="section-header">About Agrogreen</header>
           <!-- 1st about container -->
@@ -238,18 +224,18 @@
             <div class="image-l me-md-5 mt-3">
               <img
                 class="w-100 pe-none rounded"
-                src="https://images.pexels.com/photos/3735791/pexels-photo-3735791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="assets\images\Greengrocer.jpg"
                 alt=""
               />
             </div>
-
             <div class="text-container w-50 d-flex flex-column">
-              <h3 class="headline">We're leader in agriculture market</h3>
+              <h3 class="headline">Leading the Global Agriculture Market</h3>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable.
+                As a leader in the global agriculture market, we specialize in
+                the export and import of top-quality vegetables and fruits. With
+                a strong commitment to sustainability and freshness, we ensure
+                our produce reaches international markets in peak condition,
+                providing nutritious options for consumers worldwide
               </p>
               <div
                 class="tips d-flex flex-row flex-wrap justify-content-around w-100 py-3 bg-info rounded"
@@ -272,9 +258,8 @@
                 </div>
               </div>
               <p class="mt-2">
-                If you are going to use a passage of Lorem Ipsum, you need to be
-                sure there isn't anything embarrassing hidden in the middle of
-                text.
+                Cultivating Fresh Fruits and Vegetables , How to Keep Your
+                Produce Fresh Longer
               </p>
               <a href="#about" class="btn mx-auto yg-btn">Learn More</a>
             </div>
@@ -287,23 +272,21 @@
             <div class="image-r ms-md-5 mt-3">
               <img
                 class="w-100 pe-none rounded"
-                src="https://images.pexels.com/photos/10816106/pexels-photo-10816106.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="assets\images\Vege.jpg"
                 alt=""
               />
             </div>
-
             <div class="text-container pb-3 w-50 d-flex flex-column">
               <h3 class="headline">
-                We have <span class="thirty">30</span> years of agriculture &
-                eco farming experience
+                Experts in Agriculture & Sustainable Farming
               </h3>
               <p>
-                If you are going to use a passage of Lorem Ipsum, you need to be
-                sure there isn't anything embarrassing hidden in the middle of
-                text. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem eius soluta facere eos veritatis nihil qui ipsa
-                rem! Magni, sint eum. Excepturi natus ut, facere ipsam
-                necessitatibus delectus quam blanditiis.
+                As specialists in agriculture and eco-friendly farming
+                practices, we are dedicated to delivering high-quality
+                vegetables and fruits for export and import. From the fields to
+                your table, our team ensures that every step of the process
+                adheres to the highest standards of sustainability and
+                freshness.
               </p>
               <div
                 class="tips d-flex flex-row flex-wrap justify-content-around w-100 py-3 bg-info rounded"
@@ -326,141 +309,239 @@
                 </div>
               </div>
               <p class="mt-2">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable.
+                There are numerous ways to grow and export produce, but we focus
+                on providing reliable, high-quality solutions. Our approach
+                ensures that every shipment of fresh vegetables and fruits
+                reaches its destination in the best possible condition, ready to
+                meet the needs of global markets.
               </p>
               <a href="#about" class="btn mx-auto yg-btn mb-4">Learn More</a>
             </div>
           </div>
         </section>
 
-        <!-- Services section -->
+        <!-- Services Section -->
         <section
           id="services"
           class="d-flex flex-column justify-content-center"
         >
-          <header class="section-header text-capitalize">What we do</header>
-          <h3 class="headline text-center">We're offering services like</h3>
+          <header class="section-header">What we do</header>
+          <h3 class="headline text-center">We're offering Product like</h3>
+
           <div
             class="card-container d-flex flex-wrap justify-content-around mb-5"
           >
-            <div class="card mx-2">
+            <!-- Sweet Potato Card -->
+            <div class="card mx-2" id="card-sweet-potato">
               <div class="overflow-hidden rounded-top">
                 <img
-                  src="./assets/images/services/services-01.jpg"
+                  src="assets/images/sweetpotato.png"
                   class="card-img-top"
-                  alt="..."
+                  alt="Sweet Potato"
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title py-2">
-                  <a href="">Agriculture Products</a>
-                </h5>
+                <h5 class="card-title py-2"><a href="#">Sweet Potato</a></h5>
                 <p class="card-text">
-                  Seamlessly visualize quality ellectual capital without
-                  superior collaboration and idea such and asser sharing
-                  listically
+                  Fresh sweet potatoes, perfect for roasting or mashing, rich in
+                  flavor and nutrients.
                 </p>
               </div>
             </div>
-
-            <div class="card mx-2">
+            <!-- Onion Card -->
+            <div class="card mx-2" id="card-onion">
               <div class="overflow-hidden rounded-top">
                 <img
-                  src="./assets/images/services/services-02.jpg"
+                  src="assets\images\Onion.jpg  "
                   class="card-img-top"
-                  alt="..."
+                  alt="Onion"
                 />
               </div>
-
               <div class="card-body">
-                <h5 class="card-title py-2">
-                  <a href="">Fresh Vegetables</a>
-                </h5>
+                <h5 class="card-title py-2"><a href="#">Onion</a></h5>
                 <p class="card-text">
-                  Seamlessly visualize quality ellectual capital without
-                  superior collaboration and idea such and asser sharing
-                  listically
+                  Crisp and flavorful onions, ideal for enhancing the taste of
+                  your favorite dishes.
                 </p>
               </div>
             </div>
-
-            <div class="card mx-2">
+            <!-- Hot Pepper Card -->
+            <div class="card mx-2" id="card-hot-pepper">
               <div class="overflow-hidden rounded-top">
                 <img
-                  src="./assets/images/services/services-03.jpg"
+                  src="assets/images/spicy.jpg"
                   class="card-img-top"
-                  alt="..."
+                  alt="Hot Pepper"
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title py-2">
-                  <a href="">Organic Products</a>
-                </h5>
+                <h5 class="card-title py-2"><a href="#">Hot Pepper</a></h5>
                 <p class="card-text">
-                  Seamlessly visualize quality ellectual capital without
-                  superior collaboration and idea such and asser sharing
-                  listically
+                  Spicy and vibrant hot peppers, perfect for adding heat to your
+                  favorite dishes or enjoying as a fiery snack!
                 </p>
               </div>
             </div>
-
-            <div class="card mx-2">
+            <!-- Red Pepper Card -->
+            <div class="card mx-2" id="card-red-pepper">
               <div class="overflow-hidden rounded-top">
                 <img
-                  src="./assets/images/services/services-04.jpg"
+                  src="assets/images/pepperred.jpg"
                   class="card-img-top"
-                  alt="..."
+                  alt="Red Pepper"
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title py-2">
-                  <a href="">Ecological Farming</a>
-                </h5>
+                <h5 class="card-title py-2"><a href="#">Red Pepper</a></h5>
                 <p class="card-text">
-                  Seamlessly visualize quality ellectual capital without
-                  superior collaboration and idea such and asser sharing
-                  listically
+                  Crisp and vibrant red peppers, a great addition to stir-fries
+                  or salads.
                 </p>
               </div>
             </div>
-
-            <div class="card mx-2">
+            <!-- Radish Card -->
+            <div class="card mx-2" id="card-radish">
               <div class="overflow-hidden rounded-top">
                 <img
-                  src="./assets/images/services/services-05.jpg"
+                  src="assets/images/radish.jpg"
                   class="card-img-top"
-                  alt="..."
+                  alt="Radish"
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title py-2">
-                  <a href="">Dairy Products</a>
-                </h5>
+                <h5 class="card-title py-2"><a href="#">Radish</a></h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Fresh radishes with a sharp, peppery flavor, ideal for
+                  garnishing salads.
                 </p>
               </div>
             </div>
-
-            <div class="card mx-2">
+            <!-- Red Radish Card -->
+            <div class="card mx-2" id="card-red-radish">
               <div class="overflow-hidden rounded-top">
                 <img
-                  src="./assets/images/services/services-06.jpg"
+                  src="assets/images/RadishRed.png"
                   class="card-img-top"
-                  alt="..."
+                  alt="Red Radish"
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title py-2">
-                  <a href="">Fresh Berries</a>
-                </h5>
+                <h5 class="card-title py-2"><a href="#">Red Radish</a></h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Vibrant red radishes with a crisp texture, perfect for adding
+                  color to your dishes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="headline text-center">
+            We're providing high quality fruits
+          </h3>
+
+          <div
+            class="card-container d-flex flex-wrap justify-content-around mb-5"
+          >
+            <!-- Avocado Card -->
+            <div class="card mx-2" id="card-avocado">
+              <div class="overflow-hidden rounded-top">
+                <img
+                  src="assets/images/avocado.jpg"
+                  class="card-img-top"
+                  alt="Avocado"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title py-2"><a href="#">Avocado</a></h5>
+                <p class="card-text">
+                  Fresh avocados, creamy and rich, perfect for salads or toasts.
+                </p>
+              </div>
+            </div>
+            <!-- Orange Card -->
+            <div class="card mx-2" id="card-orange">
+              <div class="overflow-hidden rounded-top">
+                <img
+                  src="assets/images/Orange.jpg"
+                  class="card-img-top"
+                  alt="Orange"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title py-2"><a href="#">Orange</a></h5>
+                <p class="card-text">
+                  Crisp and juicy oranges, ideal for a refreshing snack or
+                  adding to your dishes.
+                </p>
+              </div>
+            </div>
+            <!-- Grespy Card -->
+            <div class="card mx-2" id="card-grespy">
+              <div class="overflow-hidden rounded-top">
+                <img
+                  src="assets/images/GrapesPurple.jpg"
+                  class="card-img-top"
+                  alt="Grespy"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title py-2"><a href="#">Grespy</a></h5>
+                <p class="card-text">
+                  Grespy, a crispy and refreshing fruit with a sweet, tangy
+                  taste, perfect for a healthy snack or topping in desserts.
+                </p>
+              </div>
+            </div>
+            <!-- Yellow Grespy Card -->
+            <div class="card mx-2" id="card-yellow-grespy">
+              <div class="overflow-hidden rounded-top">
+                <img
+                  src="assets/images/Grapesyellow.jpg"
+                  class="card-img-top"
+                  alt="Yellow Grespy"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title py-2"><a href="#">Yellow Grespy</a></h5>
+                <p class="card-text">
+                  The Yellow Grespy offers a unique balance of sweetness and
+                  crispness, making it a delightful choice for fresh snacking or
+                  fruit salads.
+                </p>
+              </div>
+            </div>
+            <!-- Korean Melon Card -->
+            <div class="card mx-2" id="card-korean-melon">
+              <div class="overflow-hidden rounded-top">
+                <img
+                  src="assets/images/coreanmelon.png"
+                  class="card-img-top"
+                  alt="Korean Melon"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title py-2"><a href="#">Korean Melon</a></h5>
+                <p class="card-text">
+                  Korean Melon, known for its mild sweetness and crisp texture,
+                  is a refreshing treat perfect for hot summer days or as a
+                  light snack.
+                </p>
+              </div>
+            </div>
+            <!-- Watermelon Card -->
+            <div class="card mx-2" id="card-watermelon">
+              <div class="overflow-hidden rounded-top">
+                <img
+                  src="assets/images/watermelon.jpg"
+                  class="card-img-top"
+                  alt="Watermelon"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title py-2"><a href="#">Watermelon</a></h5>
+                <p class="card-text">
+                  Juicy and refreshing, Moroccan Watermelon is the perfect
+                  summer fruit, ideal for hydrating snacks or fruit salads.
                 </p>
               </div>
             </div>
@@ -471,6 +552,8 @@
               We're providing high quality products
             </h3>
           </div>
+
+          <!-- Brands Container -->
           <div
             class="brands-container position-relative d-flex flex-row flex-nowrap overflow-hidden my-5 py-5"
           >
@@ -508,7 +591,6 @@
             </div>
           </div>
         </section>
-
         <!-- Blogs section -->
         <section id="blogs" class="d-flex flex-column justify-content-center">
           <header class="section-header">Blogs</header>
@@ -526,30 +608,29 @@
                 <img
                   class="w-100"
                   src="https://images.pexels.com/photos/2191425/pexels-photo-2191425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt=""
+                  alt="Agriculture Innovations"
                 />
               </div>
-
               <div class="blog-texts">
                 <div class="blog-user-name text-light fw-bold mb-1">
-                  Olivia Rhye &#8226; 20 Sep 2023
+                  Olivia Rhye &#8226; 15 Sep 2023
                 </div>
                 <div class="blog-title text-light fw-bold">
-                  Agriculture miracle you don't know
+                  The Future of Agriculture: Technological Innovations
                   <i class="bi bi-arrow-up-right ms-1"></i>
                 </div>
                 <p>
-                  There are lorem ipsum is simply free many variations of ipsum
-                  the majority suffered.
+                  Discover how technology is transforming agriculture, from
+                  drones to AI-driven farming solutions. What does the future
+                  hold for the global food industry?
                 </p>
               </div>
-
               <div class="extra-social d-flex flex-row ms-1 my-2">
                 <div class="like me-4 px-2">
-                  <i class="fa-regular fa-heart me-1"></i> 7
+                  <i class="fa-regular fa-heart me-1"></i> 32
                 </div>
                 <div class="comment me-3 px-2">
-                  <i class="fa-regular fa-comments me-1"></i> 1
+                  <i class="fa-regular fa-comments me-1"></i> 8
                 </div>
               </div>
             </a>
@@ -563,29 +644,29 @@
                 <img
                   class="w-100"
                   src="https://images.pexels.com/photos/442589/pexels-photo-442589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt=""
+                  alt="Drone Technology in Agriculture"
                 />
               </div>
               <div class="blog-texts">
                 <div class="blog-user-name text-light fw-bold mb-1">
-                  Paul Ahua &#8226; 30 May 2023
+                  Paul Ahua &#8226; 25 Aug 2023
                 </div>
                 <div class="blog-title text-light fw-bold">
-                  By drone can do better than you
+                  How Drones Are Revolutionizing Farming
                   <i class="bi bi-arrow-up-right ms-1"></i>
                 </div>
                 <p>
-                  There are lorem ipsum is simply free many variations of ipsum
-                  the majority suffered.
+                  Explore the cutting-edge role of drones in modern agriculture.
+                  From crop monitoring to planting, drones are shaping the
+                  future of farming.
                 </p>
               </div>
-
               <div class="extra-social d-flex flex-row ms-1 my-2">
                 <div class="like me-4 px-2">
-                  <i class="fa-regular fa-heart me-1"></i> 11
+                  <i class="fa-regular fa-heart me-1"></i> 45
                 </div>
                 <div class="comment me-3 px-2">
-                  <i class="fa-regular fa-comments me-1"></i> 3
+                  <i class="fa-regular fa-comments me-1"></i> 12
                 </div>
               </div>
             </a>
@@ -595,35 +676,33 @@
               class="blog-items m-3 position-relative"
               id="blog-item3"
             >
-              <div class="blog-title">
-                <div class="blog-image w-100">
-                  <img
-                    class="w-100"
-                    src="https://images.pexels.com/photos/949211/pexels-photo-949211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt=""
-                  />
-                </div>
+              <div class="blog-image w-100">
+                <img
+                  class="w-100"
+                  src="https://images.pexels.com/photos/949211/pexels-photo-949211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Sustainability in Agriculture"
+                />
               </div>
               <div class="blog-texts">
                 <div class="blog-user-name text-light fw-bold mb-1">
                   Met John &#8226; 09 Jul 2023
                 </div>
                 <div class="blog-title text-light fw-bold">
-                  Agriculture Miracle you
+                  Sustainability in Agriculture: Trends and Practices
                   <i class="bi bi-arrow-up-right ms-1"></i>
                 </div>
                 <p>
-                  There are lorem ipsum is simply free many variations of ipsum
-                  the majority suffered.
+                  Learn about sustainable farming practices that protect the
+                  environment while boosting efficiency and productivity in
+                  agriculture.
                 </p>
               </div>
-
               <div class="extra-social d-flex flex-row ms-1 my-2">
                 <div class="like me-4 px-2">
-                  <i class="fa-regular fa-heart me-1"></i> 9
+                  <i class="fa-regular fa-heart me-1"></i> 29
                 </div>
                 <div class="comment me-3 px-2">
-                  <i class="fa-regular fa-comments me-1"></i> 2
+                  <i class="fa-regular fa-comments me-1"></i> 5
                 </div>
               </div>
             </a>
@@ -637,35 +716,34 @@
                 <img
                   class="w-100"
                   src="https://images.pexels.com/photos/18287415/pexels-photo-18287415/free-photo-of-pumpkins-on-a-street-market.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt=""
+                  alt="Organic Farming Benefits"
                 />
               </div>
-
               <div class="blog-texts">
                 <div class="blog-user-name text-light fw-bold mb-1">
-                  Olivia Rhye &#8226; 20 Sep 2023
+                  Olivia Rhye &#8226; 10 Jun 2023
                 </div>
                 <div class="blog-title text-light fw-bold">
-                  Agriculture miracle you don't know
+                  Why Organic Farming Is on the Rise
                   <i class="bi bi-arrow-up-right ms-1"></i>
                 </div>
                 <p>
-                  There are lorem ipsum is simply free many variations of ipsum
-                  the majority suffered.
+                  Organic farming is gaining popularity, but what are the real
+                  benefits? Dive into the environmental, health, and economic
+                  reasons behind its growth.
                 </p>
               </div>
-
               <div class="extra-social d-flex flex-row ms-1 my-2">
                 <div class="like me-4 px-2">
-                  <i class="fa-regular fa-heart me-1"></i> 7
+                  <i class="fa-regular fa-heart me-1"></i> 39
                 </div>
                 <div class="comment me-3 px-2">
-                  <i class="fa-regular fa-comments me-1"></i> 1
+                  <i class="fa-regular fa-comments me-1"></i> 10
                 </div>
               </div>
             </a>
 
-            <a
+            <!-- <a
               href="#blogs"
               class="blog-items m-3 position-relative"
               id="blog-item5"
@@ -674,78 +752,40 @@
                 <img
                   class="w-100"
                   src="https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt=""
+                  alt="Urban Farming"
                 />
               </div>
               <div class="blog-texts">
                 <div class="blog-user-name text-light fw-bold mb-1">
-                  Paul Ahua &#8226; 30 May 2023
+                  Paul Ahua &#8226; 22 Jul 2023
                 </div>
                 <div class="blog-title text-light fw-bold">
-                  Doubtful on striking required point
+                  Urban Farming: Bringing Agriculture to the City
                   <i class="bi bi-arrow-up-right ms-1"></i>
                 </div>
                 <p>
-                  There are lorem ipsum is simply free many variations of ipsum
-                  the majority suffered.
+                  Urban farming is transforming cityscapes around the world.
+                  Learn how growing food in urban environments is feeding
+                  communities and promoting sustainability.
                 </p>
               </div>
-
               <div class="extra-social d-flex flex-row ms-1 my-2">
                 <div class="like me-4 px-2">
-                  <i class="fa-regular fa-heart me-1"></i> 11
+                  <i class="fa-regular fa-heart me-1"></i> 52
                 </div>
                 <div class="comment me-3 px-2">
-                  <i class="fa-regular fa-comments me-1"></i> 3
+                  <i class="fa-regular fa-comments me-1"></i> 13
                 </div>
               </div>
-            </a>
-
-            <a
-              href="#blogs"
-              class="blog-items m-3 position-relative"
-              id="blog-item6"
-            >
-              <div class="blog-title">
-                <div class="blog-image w-100">
-                  <img
-                    class="w-100"
-                    src="https://images.pexels.com/photos/2878836/pexels-photo-2878836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="blog-texts">
-                <div class="blog-user-name text-light fw-bold mb-1">
-                  Met John &#8226; 09 Jul 2023
-                </div>
-                <div class="blog-title blog-title text-light fw-bold">
-                  Agriculture Miracle you
-                  <i class="bi bi-arrow-up-right ms-1"></i>
-                </div>
-                <p>
-                  There are lorem ipsum is simply free many variations of ipsum
-                  the majority suffered.
-                </p>
-              </div>
-
-              <div class="extra-social d-flex flex-row ms-1 my-2">
-                <div class="like me-4 px-2">
-                  <i class="fa-regular fa-heart me-1"></i> 9
-                </div>
-                <div class="comment me-3 px-2">
-                  <i class="fa-regular fa-comments me-1"></i> 2
-                </div>
-              </div>
-            </a>
+            </a> -->
           </div>
 
           <a href="#blogs" class="btn mx-auto yg-btn mb-5">View More</a>
         </section>
-
         <!-- Contact section -->
         <section id="contact">
           <header class="section-header">Let's Talk</header>
+
           <!-- FAQ section -->
           <div class="faq-section my-4">
             <h3 class="headline text-center">FAQs</h3>
@@ -755,19 +795,19 @@
               <div class="image pe-2">
                 <img
                   class="w-100"
-                  src="https://images.pexels.com/photos/5231239/pexels-photo-5231239.jpeg"
-                  alt=""
+                  src="assets/images/contactbg.jpg"
+                  alt="Contact Background"
                 />
               </div>
 
               <div class="accordion-container w-50 ps-2">
                 <p class="head-para pt-3 ps-md-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem eius soluta facere eos veritatis nihil qui ipsa
-                  rem! Magni, sint eum. Excepturi natus ut, facere ipsam
-                  necessitatibus delectus quam blanditiis!
+                  Explore our frequently asked questions about the export and
+                  import of fresh vegetables and fruits. If you have additional
+                  queries, feel free to reach out to us.
                 </p>
                 <div class="accordion" id="accordionExample">
+                  <!-- Accordion Items -->
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
@@ -778,7 +818,8 @@
                         aria-expanded="false"
                         aria-controls="collapseOne"
                       >
-                        Do I need a business plan?
+                        What types of vegetables and fruits do you
+                        export/import?
                       </button>
                     </h2>
                     <div
@@ -788,11 +829,9 @@
                     >
                       <div class="accordion-body rounded-bottom">
                         <p>
-                          Continue building numerous of at relation in margaret.
-                          Lasted engage roused mother an am at. Other early
-                          while if by do to. Missed living excuse as be. Cause
-                          heard fat above first time achivement. Discourse
-                          unwilling am no described dejection incommode.
+                          We specialize in exporting and importing a wide range
+                          of fresh vegetables and fruits, including seasonal
+                          produce and exotic varieties.
                         </p>
                       </div>
                     </div>
@@ -807,7 +846,7 @@
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                        How long should a business plan be?
+                        Which countries do you export/import to and from?
                       </button>
                     </h2>
                     <div
@@ -817,11 +856,10 @@
                     >
                       <div class="accordion-body rounded-bottom">
                         <p>
-                          Continue building numerous of at relation in margaret.
-                          Lasted engage roused mother an am at. Other early
-                          while if by do to. Missed living excuse as be. Cause
-                          heard fat above first time achivement. Discourse
-                          unwilling am no described dejection incommode.
+                          We have established trade relations with numerous
+                          countries, focusing on Europe, Asia, and North
+                          America. Our import/export network is constantly
+                          expanding.
                         </p>
                       </div>
                     </div>
@@ -836,7 +874,8 @@
                         aria-expanded="false"
                         aria-controls="collapseThree"
                       >
-                        Where do I start?
+                        How do you ensure the quality of the products during
+                        shipment?
                       </button>
                     </h2>
                     <div
@@ -846,11 +885,37 @@
                     >
                       <div class="accordion-body rounded-bottom">
                         <p>
-                          Continue building numerous of at relation in margaret.
-                          Lasted engage roused mother an am at. Other early
-                          while if by do to. Missed living excuse as be. Cause
-                          heard fat above first time achivement. Discourse
-                          unwilling am no described dejection incommode.
+                          We use temperature-controlled storage and
+                          transportation to ensure that all fruits and
+                          vegetables maintain their freshness and nutritional
+                          value during transit.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed fw-bold"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        What is the process for placing an order?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFour"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body rounded-bottom">
+                        <p>
+                          You can contact our sales team via email or phone, and
+                          we will guide you through the order process, including
+                          available produce, pricing, and shipment timelines.
                         </p>
                       </div>
                     </div>
@@ -860,96 +925,43 @@
             </div>
           </div>
 
-          <!-- Get in touch section -->
-          <div
-            class="get-in-touch d-flex flex-column flex-md-row justify-content-center px-2 px-md-5"
-          >
-            <div class="contact-details my-4 mx-2 fw-bold w-100 w-md-50">
-              <h3 class="headline text-light">Get in Touch</h3>
-              <p>
-                Lorem ipsum dolor sit amet, conse ctetur adipisicing elit sed do
-                eiusm od tempor.
-              </p>
-              <div class="location d-flex flex-row">
-                <div class="icon me-4 mt-2">
-                  <i class="fa-solid fa-map-location-dot"></i>
+          <!-- Get in Touch section -->
+          <div class="get-in-touch">
+            <h3 class="title">Get in Touch</h3>
+            <div class="contact-details">
+              <div class="card-container">
+                <!-- Location -->
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fa fa-map-marker-alt"></i>
+                  </div>
+                  <div class="info">
+                    <p>Kenitra, Morocco</p>
+                  </div>
                 </div>
-                <div class="mt-4">
-                  <p>Visit us</p>
-                  <p>R-11, Bhartia Tower, Cuttack, Odisha</p>
-                </div>
-              </div>
 
-              <div class="mail d-flex flex-row">
-                <div class="icon me-4 mt-2">
-                  <i class="fa-solid fa-envelope-open-text"></i>
+                <!-- Email -->
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                  <div class="info">
+                    <p>saadhaouri@gmail.com</p>
+                  </div>
                 </div>
-                <div class="mt-4">
-                  <p>Email address</p>
-                  <p>needhelp@agrogreen.com</p>
-                </div>
-              </div>
-              <div class="number d-flex flex-row">
-                <div class="icon me-4 mt-2">
-                  <i class="fa-solid fa-headset"></i>
-                </div>
-                <div class="mt-4">
-                  <p>Call now</p>
-                  <p>+91 9999 8888</p>
+
+                <!-- Phone Numbers -->
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <div class="info">
+                    <p>Germany: 0049 177 85 87 014</p>
+                    <p>Morocco: 00212 663 22 70 59</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <form class="p-2 my-4 w-100 w-md-50">
-              <div class="d-flex justify-content-between mb-4 w-100">
-                <input
-                  type="text"
-                  id="name"
-                  class="rounded w-50 me-2 me-md-4"
-                  placeholder="Your Name"
-                  required
-                />
-                <input
-                  type="email"
-                  id="email"
-                  class="rounded w-50 ms-2 ms-md-4"
-                  placeholder="Email Address"
-                  required
-                />
-              </div>
-              <div class="d-flex justify-content-between mb-4 w-100">
-                <input
-                  type="number"
-                  id="number"
-                  class="rounded w-50 me-2 me-md-4"
-                  placeholder="Phone Number"
-                  required
-                />
-                <input
-                  type="text"
-                  id="subject"
-                  class="rounded w-50 ms-2 ms-md-4"
-                  placeholder="Subject"
-                  required
-                />
-              </div>
-              <div class="w-100">
-                <textarea
-                  name="message"
-                  id="message"
-                  class="rounded mb-4 w-100"
-                  rows="4"
-                  placeholder="Write Message"
-                  required
-                ></textarea>
-              </div>
-              <button
-                class="btn btn-warning rounded position-relative"
-                type="submit"
-              >
-                Send Message
-                <i class="fa-solid fa-paper-plane ms-2"></i>
-              </button>
-            </form>
           </div>
         </section>
       </main>
@@ -964,25 +976,21 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-3">
             <a class="navbar-brand" href="#">
-              <img
-                src="./assets/images/brand-logo.png"
-                alt="Logo"
-                width="50"
-                height="50"
-                class="d-inline-block align-text-top"
-              />
-              <span class="brand-name ms-3">AGRO<span>GREEN</span></span>
+              <span class="brand-name">
+                LASSRI
+                <span class="brand-subtitle">IMPORT / EXPORT sarl</span>
+              </span>
             </a>
             <p class="mt-2 lh-sm text-muted">
-              Happen active county. Winding morning ambition shyness evident to
-              poor. Because elderly new to the point to main success.
+              Vibrant markets stretch far and wide, as fresh harvests journey
+              across seas, fulfilling the world's demand.
             </p>
             <p class="text-muted">
               <i class="bi bi-geo-alt-fill"></i> Cuttack, Odisha, India
             </p>
             <a href="#" class="mail-id me-5 text-decoration-none text-muted"
               ><i class="bi bi-envelope-fill"></i> &nbsp;
-              needhelp@agrogreen.com</a
+              saadhaouri@gmail.com</a
             >
           </div>
 
@@ -1087,7 +1095,15 @@
         <div
           class="copyright-line d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top"
         >
-          <p>&copy; 2023 Company, Inc. & <a class="text-decoration-none text-black" href="https://github.com/nitishkumar31">Nitish</a> All rights reserved.</p>
+          <p>
+            &copy; 2023 Company, Inc. &
+            <a
+              class="text-decoration-none text-black"
+              href="https://github.com/nitishkumar31"
+              >Nitish</a
+            >
+            All rights reserved.
+          </p>
           <ul class="list-unstyled d-flex">
             <li class="ms-4">
               <a class="link-dark text-decoration-none" href="#">
