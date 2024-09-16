@@ -588,3 +588,229 @@ document
     const selectedLanguage = this.value;
     translateContactSection(selectedLanguage); // Translate contact section
   });
+const footerTranslations = {
+  en: {
+    address: "Cuttack, Odisha, India",
+    email: "saadhaouri@gmail.com",
+    exploreHeader: "Explore",
+    exploreLinks: [
+      "Home",
+      "About",
+      "Services",
+      "Blogs",
+      "Contact us",
+      "Our Projects",
+      "Upcoming Events",
+      "New Campaign",
+      "FAQs",
+      "Volunteers",
+    ],
+    newsletterHeader: "Get our newsletter",
+    newsletterParagraph: "Monthly digest of what's new and exciting from us.",
+    subscribeButton: "Subscribe",
+    copyright: "© 2023 Company, Inc. All rights reserved.",
+    terms: "Terms & Conditions",
+    privacy: "Privacy Policy",
+    support: "Support",
+  },
+  de: {
+    address: "Cuttack, Odisha, Indien",
+    email: "saadhaouri@gmail.com",
+    exploreHeader: "Entdecken",
+    exploreLinks: [
+      "Startseite",
+      "Über uns",
+      "Dienstleistungen",
+      "Blogs",
+      "Kontaktieren Sie uns",
+      "Unsere Projekte",
+      "Bevorstehende Veranstaltungen",
+      "Neue Kampagne",
+      "FAQs",
+      "Freiwillige",
+    ],
+    newsletterHeader: "Abonnieren Sie unseren Newsletter",
+    newsletterParagraph:
+      "Monatlicher Überblick über Neuigkeiten und Spannendes von uns.",
+    subscribeButton: "Abonnieren",
+    copyright: "© 2023 Unternehmen, Inc. Alle Rechte vorbehalten.",
+    terms: "Allgemeine Geschäftsbedingungen",
+    privacy: "Datenschutz-Bestimmungen",
+    support: "Unterstützung",
+  },
+};
+function translateFooter(language) {
+  // Update address and email
+  document.querySelector(".bi-geo-alt-fill").parentElement.textContent =
+    footerTranslations[language].address;
+  document.querySelector(".bi-envelope-fill").nextSibling.textContent =
+    footerTranslations[language].email;
+
+  // Update "Explore" section header
+  document.querySelector(".explore-sec h5").textContent =
+    footerTranslations[language].exploreHeader;
+
+  // Update "Explore" section links
+  const exploreLinks = document.querySelectorAll(".explore-sec .nav-link");
+  footerTranslations[language].exploreLinks.forEach((linkText, index) => {
+    exploreLinks[index].textContent = linkText;
+  });
+
+  // Update newsletter section
+  document.querySelector(".get-our-newsletter h5").textContent =
+    footerTranslations[language].newsletterHeader;
+  document.querySelector(".get-our-newsletter p").textContent =
+    footerTranslations[language].newsletterParagraph;
+  document.querySelector("#button-addon5").textContent =
+    footerTranslations[language].subscribeButton;
+
+  // Update copyright and footer links
+  document.querySelector(".copyright-line p").firstChild.textContent =
+    footerTranslations[language].copyright;
+  document.querySelectorAll(".copyright-line a")[0].textContent =
+    footerTranslations[language].terms;
+  document.querySelectorAll(".copyright-line a")[1].textContent =
+    footerTranslations[language].privacy;
+  document.querySelectorAll(".copyright-line a")[2].textContent =
+    footerTranslations[language].support;
+}
+
+// Add event listener to the select dropdown to handle language change
+document
+  .getElementById("languageSelect")
+  .addEventListener("change", function () {
+    const selectedLanguage = this.value;
+    translateFooter(selectedLanguage); // Translate footer section
+  });
+
+const blogTranslations = {
+  en: {
+    sectionHeader: "Blogs",
+    headline: "Latest Blogs & News on Export & Import of Vegetables & Fruits",
+    blogs: [
+      {
+        author: "Olivia Rhye",
+        date: "15 Sep 2023",
+        title: "Global Export Trends in Vegetables & Fruits",
+        description:
+          "Discover the latest trends in global exports of vegetables and fruits, and how international markets are shaping the industry’s future.",
+        like: "32",
+        comment: "8",
+        imageAlt: "Global Fruit and Vegetable Export Trends",
+      },
+      {
+        author: "Paul Ahua",
+        date: "25 Aug 2023",
+        title: "Overcoming Challenges in Importing Fresh Produce",
+        description:
+          "Learn about the key challenges faced when importing fresh vegetables and fruits and the solutions being implemented to maintain quality.",
+        like: "45",
+        comment: "12",
+        imageAlt: "Challenges in Importing Fresh Produce",
+      },
+      {
+        author: "Met John",
+        date: "09 Jul 2023",
+        title: "Sustainable Practices in the Export of Fruits",
+        description:
+          "Explore how sustainability is being integrated into the export process of fruits, ensuring minimal environmental impact while maximizing efficiency.",
+        like: "29",
+        comment: "5",
+        imageAlt: "Sustainable Practices in Exporting Fruits",
+      },
+      {
+        author: "Olivia Rhye",
+        date: "10 Jun 2023",
+        title: "The Rise of Organic Imports in the Global Market",
+        description:
+          "Organic produce is gaining traction in the international market. Dive into the reasons behind the increasing demand for organic fruits and vegetables.",
+        like: "39",
+        comment: "10",
+        imageAlt: "Organic Fruit & Vegetable Imports",
+      },
+    ],
+    viewMore: "View More",
+  },
+  de: {
+    sectionHeader: "Blogs",
+    headline:
+      "Neueste Blogs & Nachrichten zum Export & Import von Gemüse & Früchten",
+    blogs: [
+      {
+        author: "Olivia Rhye",
+        date: "15. Sep 2023",
+        title: "Globale Exporttrends bei Gemüse & Früchten",
+        description:
+          "Entdecken Sie die neuesten Trends im globalen Export von Gemüse und Früchten und wie internationale Märkte die Zukunft der Branche gestalten.",
+        like: "32",
+        comment: "8",
+        imageAlt: "Globale Exporttrends bei Gemüse und Früchten",
+      },
+      {
+        author: "Paul Ahua",
+        date: "25. Aug 2023",
+        title: "Herausforderungen beim Import frischer Produkte überwinden",
+        description:
+          "Erfahren Sie mehr über die wichtigsten Herausforderungen beim Import frischer Gemüse und Früchte und die Lösungen zur Qualitätserhaltung.",
+        like: "45",
+        comment: "12",
+        imageAlt: "Herausforderungen beim Import frischer Produkte",
+      },
+      {
+        author: "Met John",
+        date: "09. Jul 2023",
+        title: "Nachhaltige Praktiken im Export von Früchten",
+        description:
+          "Erkunden Sie, wie Nachhaltigkeit in den Exportprozess von Früchten integriert wird, um minimale Umweltbelastungen bei maximaler Effizienz zu gewährleisten.",
+        like: "29",
+        comment: "5",
+        imageAlt: "Nachhaltige Praktiken im Export von Früchten",
+      },
+      {
+        author: "Olivia Rhye",
+        date: "10. Jun 2023",
+        title: "Der Aufstieg von Bio-Importen auf dem Weltmarkt",
+        description:
+          "Bio-Produkte gewinnen auf dem internationalen Markt an Bedeutung. Erfahren Sie die Gründe für die steigende Nachfrage nach Bio-Gemüse und -Früchten.",
+        like: "39",
+        comment: "10",
+        imageAlt: "Bio-Gemüse und -Früchte Importe",
+      },
+    ],
+    viewMore: "Mehr anzeigen",
+  },
+};
+
+function translateBlogSection(language) {
+  // Update section header
+  document.querySelector("#blogs .section-header").textContent =
+    blogTranslations[language].sectionHeader;
+
+  // Update headline
+  document.querySelector("#blogs .headline").textContent =
+    blogTranslations[language].headline;
+
+  // Update blog items
+  const blogs = blogTranslations[language].blogs;
+  document.querySelectorAll(".blog-items").forEach((blogItem, index) => {
+    const blog = blogs[index];
+    blogItem.querySelector(
+      ".blog-user-name"
+    ).textContent = `${blog.author} • ${blog.date}`;
+    blogItem.querySelector(".blog-title").textContent = blog.title;
+    blogItem.querySelector("p").textContent = blog.description;
+    blogItem.querySelector(".like").textContent = `❤ ${blog.like}`;
+    blogItem.querySelector(".comment").textContent = `💬 ${blog.comment}`;
+    blogItem.querySelector("img").alt = blog.imageAlt;
+  });
+
+  // Update 'View More' button
+  document.querySelector("#blogs .yg-btn").textContent =
+    blogTranslations[language].viewMore;
+}
+document
+  .getElementById("languageSelect")
+  .addEventListener("change", function () {
+    const selectedLanguage = this.value;
+    translateBlogSection(selectedLanguage); // Translate blog section
+  });

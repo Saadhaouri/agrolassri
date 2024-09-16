@@ -1,0 +1,114 @@
+{
+  "en": {
+    "header": "What we do",
+    "headline1": "We're offering Product like",
+    "cards": {
+      "sweetPotato": {
+        "title": "Sweet Potato",
+        "text": "Fresh sweet potatoes, perfect for roasting or mashing, rich in flavor and nutrients."
+      },
+      "onion": {
+        "title": "Onion",
+        "text": "Crisp and flavorful onions, ideal for enhancing the taste of your favorite dishes."
+      },
+      "hotPepper": {
+        "title": "Hot Pepper",
+        "text": "Spicy and vibrant hot peppers, perfect for adding heat to your favorite dishes or enjoying as a fiery snack!"
+      },
+      "redPepper": {
+        "title": "Red Pepper",
+        "text": "Crisp and vibrant red peppers, a great addition to stir-fries or salads."
+      },
+      "radish": {
+        "title": "Radish",
+        "text": "Fresh radishes with a sharp, peppery flavor, ideal for garnishing salads."
+      },
+      "redRadish": {
+        "title": "Red Radish",
+        "text": "Vibrant red radishes with a crisp texture, perfect for adding color to your dishes."
+      },
+      "avocado": {
+        "title": "Avocado",
+        "text": "Fresh avocados, creamy and rich, perfect for salads or toasts."
+      },
+      "orange": {
+        "title": "Orange",
+        "text": "Crisp and juicy oranges, ideal for a refreshing snack or adding to your dishes."
+      },
+      "grespy": {
+        "title": "Grespy",
+        "text": "Grespy, a crispy and refreshing fruit with a sweet, tangy taste, perfect for a healthy snack or topping in desserts."
+      },
+      "yellowGrespy": {
+        "title": "Yellow Grespy",
+        "text": "The Yellow Grespy offers a unique balance of sweetness and crispness, making it a delightful choice for fresh snacking or fruit salads."
+      },
+      "koreanMelon": {
+        "title": "Korean Melon",
+        "text": "Korean Melon, known for its mild sweetness and crisp texture, is a refreshing treat perfect for hot summer days or as a light snack."
+      },
+      "watermelon": {
+        "title": "Watermelon",
+        "text": "Juicy and refreshing, Moroccan Watermelon is the perfect summer fruit, ideal for hydrating snacks or fruit salads."
+      }
+    },
+    "headline2": "We're providing high quality fruits",
+    "brandsHeader": "We're providing high quality products"
+  },
+  "de": {
+    "header": "Was wir tun",
+    "headline1": "Wir bieten Produkte wie",
+    "cards": {
+      "sweetPotato": {
+        "title": "Süßkartoffel",
+        "text": "Frische Süßkartoffeln, ideal zum Rösten oder Pürieren, reich an Geschmack und Nährstoffen."
+      },
+      "onion": {
+        "title": "Zwiebel",
+        "text": "Crispe und aromatische Zwiebeln, ideal zum Verfeinern Ihrer Lieblingsgerichte."
+      },
+      "hotPepper": {
+        "title": "Scharfe Paprika",
+        "text": "Scharfe und lebendige Paprika, perfekt zum Würzen Ihrer Lieblingsgerichte oder als scharfer Snack!"
+      },
+      "redPepper": {
+        "title": "Rote Paprika",
+        "text": "Crispe und lebhafte rote Paprika, eine großartige Ergänzung für Pfannengerichte oder Salate."
+      },
+      "radish": {
+        "title": "Radieschen",
+        "text": "Frische Radieschen mit einem scharfen, pfeffrigen Geschmack, ideal zum Garnieren von Salaten."
+      },
+      "redRadish": {
+        "title": "Rote Radieschen",
+        "text": "Lebhafte rote Radieschen mit einer knusprigen Textur, perfekt zum Hinzufügen von Farbe zu Ihren Gerichten."
+      },
+      "avocado": {
+        "title": "Avocado",
+        "text": "Frische Avocados, cremig und reichhaltig, ideal für Salate oder Toasts."
+      },
+      "orange": {
+        "title": "Orange",
+        "text": "Crispe und saftige Orangen, ideal für einen erfrischenden Snack oder zum Verfeinern Ihrer Gerichte."
+      },
+      "grespy": {
+        "title": "Grespy",
+        "text": "Grespy, eine knusprige und erfrischende Frucht mit einem süßen, würzigen Geschmack, ideal als gesunder Snack oder als Topping in Desserts."
+      },
+      "yellowGrespy": {
+        "title": "Gelbes Grespy",
+        "text": "Das gelbe Grespy bietet eine einzigartige Balance aus Süße und Knusprigkeit und ist eine hervorragende Wahl für frisches Snacken oder Obstsalate."
+      },
+      "koreanMelon": {
+        "title": "Koreanische Melone",
+        "text": "Koreanische Melone, bekannt für ihre milde Süße und knusprige Textur, ist ein erfrischender Genuss, perfekt für heiße Sommertage oder als leichter Snack."
+      },
+      "watermelon": {
+        "title": "Wassermelone",
+        "text": "Saftig und erfrischend, marokkanische Wassermelone ist das perfekte Sommerobst, ideal für hydrierende Snacks oder Obstsalate."
+      }
+    },
+    "headline2": "Wir bieten hochwertige Früchte an",
+    "brandsHeader": "Wir bieten hochwertige Produkte an"
+  }
+}
