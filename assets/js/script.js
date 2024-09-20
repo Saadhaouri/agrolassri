@@ -590,7 +590,6 @@ document
   });
 const footerTranslations = {
   en: {
-    address: "Cuttack, Odisha, India",
     email: "saadhaouri@gmail.com",
     exploreHeader: "Explore",
     exploreLinks: [
@@ -614,7 +613,6 @@ const footerTranslations = {
     support: "Support",
   },
   de: {
-    address: "Cuttack, Odisha, Indien",
     email: "saadhaouri@gmail.com",
     exploreHeader: "Entdecken",
     exploreLinks: [
