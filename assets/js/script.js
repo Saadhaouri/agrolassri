@@ -333,16 +333,16 @@ const servicesTranslations = {
         text: "Crispe und lebhafte rote Paprika, eine großartige Ergänzung für Pfannengerichte oder Salate.",
       },
       radish: {
-        title: "Radieschen",
-        text: "Frische Radieschen mit einem scharfen, pfeffrigen Geschmack, ideal zum Garnieren von Salaten.",
+        title: "Rettich",
+        text: "Frische Rettich mit einem scharfen, pfeffrigen Geschmack, ideal zum Garnieren von Salaten.",
       },
       redRadish: {
-        title: "Rote Radieschen",
-        text: "Lebhafte rote Radieschen mit einer knusprigen Textur, perfekt zum Hinzufügen von Farbe zu Ihren Gerichten.",
+        title: "Rote Rettich",
+        text: "Lebhafte rote Rettich mit einer knusprigen Textur, perfekt zum Hinzufügen von Farbe zu Ihren Gerichten.",
       },
       avocado: {
         title: "Avocado",
-        text: "Frische Avocados, cremig und reichhaltig, ideal für Salate oder Toasts.",
+        text: "Frische Avocados reichhaltig, ideal für Salate oder Toasts.",
       },
       orange: {
         title: "Orange",
