@@ -350,7 +350,7 @@ const servicesTranslations = {
       },
       grespy: {
         title: "Grespy",
-        text: "Grespy, eine knusprige und erfrischende Frucht mit einem süßen, würzigen Geschmack, ideal als gesunder Snack oder als Topping in Desserts.",
+        text: "Grespy, eine erfrischende Frucht mit einem süßen, würzigen Geschmack.",
       },
       yellowGrespy: {
         title: "Gelbes Grespy",
@@ -494,10 +494,10 @@ const contactTranslations = {
     ],
     contactTitle: "Get in Touch",
     location: "Kenitra, Morocco",
-    email: "saadhaouri@gmail.com",
+    email: "lassri.sarl.import.export@gmail.com",
     phones: {
-      germany: "Germany: 0049 177 85 87 014",
-      morocco: "Morocco: 00212 663 22 70 59",
+      germany: "Germany: +49 177 85 87 014",
+      morocco: "Morocco: +212 663 22 70 59",
     },
   },
   de: {
@@ -531,10 +531,10 @@ const contactTranslations = {
     ],
     contactTitle: "Kontaktieren Sie uns",
     location: "Kenitra, Marokko",
-    email: "saadhaouri@gmail.com",
+    email: "lassri.sarl.import.export@gmail.com",
     phones: {
-      germany: "Deutschland: 0049 177 85 87 014",
-      morocco: "Marokko: 00212 663 22 70 59",
+      germany: "Deutschland: +49 177 85 87 014",
+      morocco: "Marokko: +212 663 22 70 59",
     },
   },
 };
@@ -590,7 +590,7 @@ document
   });
 const footerTranslations = {
   en: {
-    email: "saadhaouri@gmail.com",
+    email: "lassri.sarl.import.export@gmail.com",
     exploreHeader: "Explore",
     exploreLinks: [
       "Home",
@@ -613,7 +613,7 @@ const footerTranslations = {
     support: "Support",
   },
   de: {
-    email: "saadhaouri@gmail.com",
+    email: "lassri.sarl.import.export@gmail.com",
     exploreHeader: "Entdecken",
     exploreLinks: [
       "Startseite",
