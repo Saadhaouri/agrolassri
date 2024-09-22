@@ -159,10 +159,10 @@ document
 /// Define translations for English and Deutsch
 const aboutTranslations = {
   en: {
-    header: "About Agrogreen",
+    header: "About lassri export-import",
     headline1: "Leading the Global Agriculture Market",
     paragraph1:
-      "As a leader in the global agriculture market, we specialize in the export and import of top-quality vegetables and fruits. With a strong commitment to sustainability and freshness, we ensure our produce reaches international markets in peak condition, providing nutritious options for consumers worldwide.",
+      "As a leader in the global agricultural market, we specialize in the export and import of premium Moroccan vegetables and fruits. Through our strong commitment to sustainability and freshness, we ensure that our products reach international markets, including Germany, in the best condition, providing consumers with nutritious and authentic options. Our goal is to offer only the best products produced in Morocco, always putting the happiness and satisfaction of our customers in Germany and around the world first.",
     tip1: "Growing Fruits and Vegetables",
     tip2: "Tips for Ripening your Fruits",
     additionalInfo1:
@@ -179,10 +179,10 @@ const aboutTranslations = {
     button2: "Learn More",
   },
   de: {
-    header: "Über Agrogreen",
+    header: "Über lassri export-import",
     headline1: "Führend im globalen Agrarmarkt",
     paragraph1:
-      "Als führendes Unternehmen im globalen Agrarmarkt sind wir auf den Export und Import von qualitativ hochwertigem Obst und Gemüse spezialisiert. Mit einem starken Engagement für Nachhaltigkeit und Frische stellen wir sicher, dass unsere Produkte internationale Märkte in bestem Zustand erreichen und weltweit nahrhafte Optionen bieten.",
+      "Als führendes Unternehmen auf dem globalen Agrarmarkt sind wir auf den Export und Import von erstklassigem marokkanischem Gemüse und Obst spezialisiert. Durch unser starkes Engagement für Nachhaltigkeit und Frische stellen wir sicher, dass unsere Produkte in bestem Zustand internationale Märkte, einschließlich Deutschland, erreichen und den Verbrauchern nahrhafte und authentische Optionen bieten. Unser Ziel ist es, nur die besten in Marokko produzierten Produkte anzubieten und dabei stets das Glücklishkeit und die Zufriedenheit unserer Kunden in Deutschland und der Welt in den Vordergrund zu stellen..",
     tip1: "Obst und Gemüse anbauen",
     tip2: "Tipps zum Reifen Ihrer Früchte",
     additionalInfo1:
@@ -334,11 +334,11 @@ const servicesTranslations = {
       },
       radish: {
         title: "Rettich",
-        text: "Frische Rettich mit einem scharfen, pfeffrigen Geschmack, ideal zum Garnieren von Salaten.",
+        text: "Frische Rettich mit der besten Geschmack, ideal zum Garnieren von Salaten.",
       },
       redRadish: {
         title: "Rote Rettich",
-        text: "Lebhafte rote Rettich mit einer knusprigen Textur, perfekt zum Hinzufügen von Farbe zu Ihren Gerichten.",
+        text: "Lebhafte rote Rettich  perfekt zum Hinzufügen von Farbe zu Ihren Gerichten.",
       },
       avocado: {
         title: "Avocado",
@@ -346,7 +346,7 @@ const servicesTranslations = {
       },
       orange: {
         title: "Orange",
-        text: "Crispe und saftige Orangen, ideal für einen erfrischenden Snack oder zum Verfeinern Ihrer Gerichte.",
+        text: "Crispe und saftige Orangen, reich mit vitamine C ",
       },
       grespy: {
         title: "Grespy",
@@ -354,11 +354,11 @@ const servicesTranslations = {
       },
       yellowGrespy: {
         title: "Gelbes Grespy",
-        text: "Das gelbe Grespy bietet eine einzigartige Balance aus Süße und Knusprigkeit und ist eine hervorragende Wahl für frisches Snacken oder Obstsalate.",
+        text: "Das gelbe Grespy bietet eine einzigartige  Süßes Balance  und ist eine hervorragende Wahl für frisches Snacken oder desert.",
       },
       koreanMelon: {
         title: "Koreanische Melone",
-        text: "Koreanische Melone, bekannt für ihre milde Süße und knusprige Textur, ist ein erfrischender Genuss, perfekt für heiße Sommertage oder als leichter Snack.",
+        text: "Koreanische Melone, bekannt für ihre milde Süße  Textur , es ist ein erfrischender Genuss, perfekt für heiße Sommertage oder als leichter Snack.",
       },
       watermelon: {
         title: "Wassermelone",
@@ -769,7 +769,7 @@ const blogTranslations = {
         date: "10. Jun 2023",
         title: "Der Aufstieg von Bio-Importen auf dem Weltmarkt",
         description:
-          "Bio-Produkte gewinnen auf dem internationalen Markt an Bedeutung. Erfahren Sie die Gründe für die steigende Nachfrage nach Bio-Gemüse und -Früchten.",
+          "Bio-Produkte gewinnen auf dem internationalen Markt an Bedeutung. Erfahren Sie die Gründe für die steigende Nachfrage nach Gemüse und -Früchten.",
         like: "39",
         comment: "10",
         imageAlt: "Bio-Gemüse und -Früchte Importe",
